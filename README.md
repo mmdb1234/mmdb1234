@@ -1,16 +1,48 @@
-## Hi there 👋
+# Hi, I'm Mohammad 👋
 
-<!--
-**mmdb1234/mmdb1234** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Backend & AI Automation Developer
 
-Here are some ideas to get you started:
+I build:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+* AI-powered business tools
+* Automation workflows
+* Backend systems
+* Fullstack SaaS applications
+
+## Tech Stack
+
+* ASP.NET Core
+* Python
+* FastAPI
+* React / Next.js
+* PostgreSQL
+* Docker
+* Microservices
+* n8n
+* AI Workflows
+
+## Featured Projects
+
+### AI CRM Assistant
+
+AI-powered CRM assistant for sales teams.
+
+### Workflow Automation Platform
+
+Business automation workflows using n8n and AI.
+
+### Microservice ERP System
+
+Enterprise architecture including inventory, accounting, BPM, reporting and commerce modules.
+
+## Current Focus
+
+* AI Automation
+* AI CRM tools
+* SaaS products
+* Backend architecture
+
+## Contact
+
+* LinkedIn: (your linkedin)
+* Email: (your email)
