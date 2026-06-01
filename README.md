@@ -44,5 +44,5 @@ Enterprise architecture including inventory, accounting, BPM, reporting and comm
 
 ## Contact
 
-* LinkedIn: (your linkedin)
-* Email: (your email)
+* LinkedIn: http://linkedin.com/in/mohammad-barzgar-899476307
+* Email: mohjammad200@gmail.com and mohjammad1@gmail.com
