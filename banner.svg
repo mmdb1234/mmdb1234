@@ -1,504 +1,135 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600">
-  <foreignObject width="100%" height="100%">
-<div xmlns="http://www.w3.org/1999/xhtml">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mohammad Barzgar · Backend Engineer</title>
-
-    <!-- Font Awesome Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
     <style>
-        /* ---------- reset & base ---------- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0b0e14;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 24px;
-        }
-
-        /* ---------- main card ---------- */
-        .banner {
-            max-width: 1200px;
-            width: 100%;
-            background: linear-gradient(145deg, #11161f, #0b0e14);
-            border-radius: 48px;
-            padding: 52px 56px;
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7), inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-            position: relative;
-            overflow: hidden;
-            transition: box-shadow 0.3s;
-        }
-
-        .banner:hover {
-            box-shadow: 0 40px 100px rgba(0, 20, 80, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
-        }
-
-        /* ---------- animated gradient orb (background) ---------- */
-        .orb {
-            position: absolute;
-            top: -20%;
-            right: -10%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(0, 200, 255, 0.12) 0%, rgba(0, 200, 255, 0) 70%);
-            border-radius: 50%;
-            filter: blur(100px);
-            animation: orbFloat 16s ease-in-out infinite alternate;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .orb2 {
-            position: absolute;
-            bottom: -20%;
-            left: -10%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(120, 80, 255, 0.10) 0%, rgba(120, 80, 255, 0) 70%);
-            border-radius: 50%;
-            filter: blur(120px);
-            animation: orbFloat2 20s ease-in-out infinite alternate;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        @keyframes orbFloat {
-            0% {
-                transform: translate(0, 0) scale(1);
-            }
-            50% {
-                transform: translate(-40px, 30px) scale(1.1);
-            }
-            100% {
-                transform: translate(20px, -20px) scale(0.95);
-            }
-        }
-
-        @keyframes orbFloat2 {
-            0% {
-                transform: translate(0, 0) scale(1);
-            }
-            50% {
-                transform: translate(30px, -40px) scale(1.15);
-            }
-            100% {
-                transform: translate(-20px, 20px) scale(0.9);
-            }
-        }
-
-        /* ---------- content (above background) ---------- */
-        .banner-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        /* ---------- top row: avatar + badge ---------- */
-        .top-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 32px;
-        }
-
-        .avatar-group {
-            display: flex;
-            align-items: center;
-            gap: 18px;
-        }
-
-        .avatar {
-            width: 72px;
-            height: 72px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #1e2a3a, #0f1620);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 32px;
-            font-weight: 600;
-            color: #c0d0e0;
-            border: 2px solid rgba(0, 180, 255, 0.3);
-            box-shadow: 0 0 30px rgba(0, 180, 255, 0.15);
-            transition: 0.3s;
-        }
-
-        .avatar:hover {
-            border-color: #00b4ff;
-            box-shadow: 0 0 50px rgba(0, 180, 255, 0.3);
-            transform: scale(1.04);
-        }
-
-        .name-title h1 {
-            font-size: 32px;
-            font-weight: 700;
-            color: #ffffff;
-            letter-spacing: -0.5px;
-        }
-
-        .name-title .badge {
-            display: inline-block;
-            margin-top: 6px;
-            font-size: 14px;
-            font-weight: 500;
-            color: #8ab4f8;
-            background: rgba(0, 180, 255, 0.10);
-            padding: 4px 16px;
-            border-radius: 100px;
-            border: 1px solid rgba(0, 180, 255, 0.15);
-            backdrop-filter: blur(4px);
-        }
-
-        .status-pulse {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(0, 255, 180, 0.06);
-            padding: 8px 20px;
-            border-radius: 100px;
-            border: 1px solid rgba(0, 255, 180, 0.15);
-        }
-
-        .pulse-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: #00f5a0;
-            animation: pulse 2s ease-in-out infinite;
-            box-shadow: 0 0 20px rgba(0, 245, 160, 0.4);
-        }
-
-        @keyframes pulse {
-            0% {
-                opacity: 0.4;
-                transform: scale(0.9);
-            }
-            50% {
-                opacity: 1;
-                transform: scale(1.2);
-            }
-            100% {
-                opacity: 0.4;
-                transform: scale(0.9);
-            }
-        }
-
-        .status-pulse span {
-            color: #b0d0e0;
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: 0.3px;
-        }
-
-        /* ---------- tagline ---------- */
-        .tagline {
-            font-size: 20px;
-            font-weight: 400;
-            color: #b8c8dd;
-            margin-bottom: 28px;
-            line-height: 1.5;
-            max-width: 700px;
-        }
-
-        .tagline strong {
-            color: #ffffff;
-            font-weight: 600;
-            background: linear-gradient(135deg, #00b4ff, #7b61ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* ---------- animated tech strip ---------- */
-        .tech-strip {
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 60px;
-            padding: 14px 20px;
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            margin-bottom: 36px;
-            overflow: hidden;
-        }
-
-        .tech-strip-inner {
-            display: flex;
-            gap: 32px;
-            animation: scrollTech 18s linear infinite;
-            white-space: nowrap;
-            width: max-content;
-        }
-
-        .tech-strip-inner span {
-            color: #7a8fa3;
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .tech-strip-inner span i {
-            color: #00b4ff;
-            font-size: 16px;
-        }
-
-        @keyframes scrollTech {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        /* ---------- stats / highlights ---------- */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 16px;
-            margin-bottom: 36px;
-        }
-
-        .stat-item {
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 20px;
-            padding: 18px 20px;
-            border: 1px solid rgba(255, 255, 255, 0.03);
-            text-align: center;
-            transition: 0.25s;
-        }
-
-        .stat-item:hover {
-            background: rgba(255, 255, 255, 0.04);
-            border-color: rgba(0, 180, 255, 0.12);
-            transform: translateY(-2px);
-        }
-
-        .stat-item .number {
-            font-size: 28px;
-            font-weight: 700;
-            color: #ffffff;
-            letter-spacing: -0.5px;
-        }
-
-        .stat-item .number .accent {
-            color: #00b4ff;
-        }
-
-        .stat-item .label {
-            font-size: 14px;
-            color: #7a8fa3;
-            margin-top: 4px;
-        }
-
-        /* ---------- CTA buttons ---------- */
-        .cta-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            margin-top: 8px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 14px 30px;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 15px;
-            text-decoration: none;
-            transition: 0.25s;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #0077ff, #5a3fff);
-            color: #ffffff;
-            box-shadow: 0 8px 30px rgba(0, 100, 255, 0.25);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 12px 40px rgba(0, 100, 255, 0.35);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: #c0d0e0;
-            border: 1px solid rgba(255, 255, 255, 0.10);
-        }
-
-        .btn-outline:hover {
-            background: rgba(255, 255, 255, 0.04);
-            border-color: rgba(255, 255, 255, 0.20);
-            transform: translateY(-3px);
-        }
-
-        .btn i {
-            font-size: 18px;
-        }
-
-        /* ---------- responsive ---------- */
-        @media (max-width: 720px) {
-            .banner {
-                padding: 32px 24px;
-                border-radius: 32px;
-            }
-
-            .top-row {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .status-pulse {
-                align-self: flex-start;
-            }
-
-            .name-title h1 {
-                font-size: 26px;
-            }
-
-            .tagline {
-                font-size: 17px;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .cta-row {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .btn {
-                justify-content: center;
-            }
-
-            .tech-strip {
-                padding: 10px 14px;
-            }
-        }
-
-        @media (max-width: 440px) {
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+      .bg { fill: #0b0e14; }
+      .banner-bg { fill: #11161f; rx: 48; }
+      .text-white { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .text-gray { fill: #b8c8dd; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .text-dark { fill: #7a8fa3; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .badge-bg { fill: rgba(0,180,255,0.10); stroke: rgba(0,180,255,0.15); rx: 100; }
+      .badge-text { fill: #8ab4f8; font-size: 14px; font-weight: 500; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .btn-primary-bg { fill: url(#btnGrad); rx: 60; }
+      .btn-outline-bg { fill: transparent; stroke: rgba(255,255,255,0.10); rx: 60; }
+      .btn-outline-blue { fill: transparent; stroke: rgba(0,180,255,0.15); rx: 60; }
+      .btn-text { fill: #ffffff; font-size: 15px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .btn-text-outline { fill: #c0d0e0; font-size: 15px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .stat-bg { fill: rgba(255,255,255,0.02); stroke: rgba(255,255,255,0.03); rx: 20; }
+      .stat-number { fill: #ffffff; font-size: 28px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .stat-label { fill: #7a8fa3; font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .tech-bg { fill: rgba(255,255,255,0.02); stroke: rgba(255,255,255,0.04); rx: 60; }
+      .tech-text { fill: #7a8fa3; font-size: 14px; font-weight: 500; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .accent { fill: #00b4ff; }
+      .avatar-bg { fill: #1e2a3a; stroke: rgba(0,180,255,0.3); stroke-width: 2; }
+      .avatar-text { fill: #c0d0e0; font-size: 32px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .status-bg { fill: rgba(0,255,180,0.06); stroke: rgba(0,255,180,0.15); rx: 100; }
+      .status-text { fill: #b0d0e0; font-size: 14px; font-weight: 500; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
     </style>
-</head>
-<body>
-
-    <div class="banner">
-
-        <!-- Animated background orbs -->
-        <div class="orb"></div>
-        <div class="orb2"></div>
-
-        <div class="banner-content">
-
-            <!-- top row: avatar + status -->
-            <div class="top-row">
-                <div class="avatar-group">
-                    <div class="avatar">MB</div>
-                    <div class="name-title">
-                        <h1>Mohammad Barzgar</h1>
-                        <div class="badge">
-                            <i class="fas fa-code" style="margin-right:6px;"></i>
-                            Backend · AI · SaaS
-                        </div>
-                    </div>
-                </div>
-                <div class="status-pulse">
-                    <span class="pulse-dot"></span>
-                    <span>Open to work</span>
-                </div>
-            </div>
-
-            <!-- tagline -->
-            <div class="tagline">
-                I help startups build <strong>scalable backends</strong> &amp;
-                <strong>AI-powered business automation</strong> — from MVP to production.
-            </div>
-
-            <!-- animated tech strip -->
-            <div class="tech-strip">
-                <div class="tech-strip-inner">
-                    <span><i class="fas fa-cube"></i> ASP.NET Core</span>
-                    <span><i class="fab fa-python"></i> Python · FastAPI</span>
-                    <span><i class="fas fa-database"></i> PostgreSQL · Redis</span>
-                    <span><i class="fas fa-cloud"></i> Docker · Linux</span>
-                    <span><i class="fas fa-brain"></i> AI Agents · LLMs</span>
-                    <span><i class="fas fa-cogs"></i> n8n · Automation</span>
-                    <span><i class="fas fa-code"></i> React · Next.js</span>
-                    <span><i class="fas fa-cube"></i> ASP.NET Core</span>
-                    <span><i class="fab fa-python"></i> Python · FastAPI</span>
-                    <span><i class="fas fa-database"></i> PostgreSQL · Redis</span>
-                    <span><i class="fas fa-cloud"></i> Docker · Linux</span>
-                    <span><i class="fas fa-brain"></i> AI Agents · LLMs</span>
-                    <span><i class="fas fa-cogs"></i> n8n · Automation</span>
-                    <span><i class="fas fa-code"></i> React · Next.js</span>
-                </div>
-            </div>
-
-            <!-- stats -->
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="number">7<span class="accent">+</span></div>
-                    <div class="label">Years Backend Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="number">10<span class="accent">d</span></div>
-                    <div class="label">MVP to Production</div>
-                </div>
-                <div class="stat-item">
-                    <div class="number">3<span class="accent">+</span></div>
-                    <div class="label">Startups Scaled</div>
-                </div>
-                <div class="stat-item">
-                    <div class="number">100<span class="accent">%</span></div>
-                    <div class="label">Remote Friendly</div>
-                </div>
-            </div>
-
-            <!-- CTA -->
-            <div class="cta-row">
-                <a href="https://linkedin.com/in/mohammad-barzgar-899476307" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="mailto:mohjammad200@gmail.com" class="btn btn-outline">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-                <a href="#" class="btn btn-outline" style="border-color:rgba(0,180,255,0.15);">
-                    <i class="fas fa-file-alt"></i> View CV
-                </a>
-            </div>
-
-        </div>
-        <!-- /banner-content -->
-    </div>
-</div>
-  </foreignObject>
+    
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0077ff" />
+      <stop offset="100%" style="stop-color:#5a3fff" />
+    </linearGradient>
+    
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00b4ff" />
+      <stop offset="100%" style="stop-color:#7b61ff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- پس‌زمینه -->
+  <rect class="bg" width="1200" height="600"/>
+  <rect class="banner-bg" x="20" y="20" width="1160" height="560"/>
+  
+  <!-- توپ‌های نوری متحرک -->
+  <circle cx="900" cy="100" r="300" fill="rgba(0,200,255,0.06)" filter="blur(80px)">
+    <animate attributeName="cx" values="900;860;920;900" dur="16s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="100;130;80;100" dur="16s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="500" r="250" fill="rgba(120,80,255,0.05)" filter="blur(80px)">
+    <animate attributeName="cx" values="200;230;170;200" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="500;460;540;500" dur="20s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- آواتار -->
+  <circle class="avatar-bg" cx="85" cy="85" r="36"/>
+  <text class="avatar-text" x="85" y="95" text-anchor="middle">MB</text>
+  
+  <!-- نام -->
+  <text class="text-white" x="140" y="80" font-size="32" font-weight="700">Mohammad Barzgar</text>
+  
+  <!-- Badge -->
+  <rect class="badge-bg" x="140" y="95" width="155" height="30"/>
+  <text class="badge-text" x="155" y="114">⚡ Backend · AI · SaaS</text>
+  
+  <!-- Status Pulse -->
+  <rect class="status-bg" x="900" y="70" width="145" height="36"/>
+  <circle cx="918" cy="88" r="6" fill="#00f5a0">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text class="status-text" x="935" y="93">Open to work</text>
+  
+  <!-- Tagline -->
+  <text class="text-gray" x="50" y="175" font-size="20">I help startups build scalable backends &amp;</text>
+  <text class="text-gray" x="50" y="205" font-size="20">AI-powered business automation — from MVP to production.</text>
+  
+  <!-- Tech Strip -->
+  <rect class="tech-bg" x="50" y="245" width="1100" height="50"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0" to="-550" dur="18s" repeatCount="indefinite"/>
+    <text class="tech-text" x="70" y="275">⚙️ ASP.NET Core</text>
+    <text class="tech-text" x="200" y="275">🐍 Python · FastAPI</text>
+    <text class="tech-text" x="350" y="275">🗄️ PostgreSQL · Redis</text>
+    <text class="tech-text" x="530" y="275">☁️ Docker · Linux</text>
+    <text class="tech-text" x="680" y="275">🧠 AI Agents · LLMs</text>
+    <text class="tech-text" x="830" y="275">⚡ n8n · Automation</text>
+    <text class="tech-text" x="980" y="275">🖥️ React · Next.js</text>
+    <!-- تکرار برای اسکرول -->
+    <text class="tech-text" x="1130" y="275">⚙️ ASP.NET Core</text>
+    <text class="tech-text" x="1260" y="275">🐍 Python · FastAPI</text>
+    <text class="tech-text" x="1410" y="275">🗄️ PostgreSQL · Redis</text>
+    <text class="tech-text" x="1590" y="275">☁️ Docker · Linux</text>
+    <text class="tech-text" x="1740" y="275">🧠 AI Agents · LLMs</text>
+    <text class="tech-text" x="1890" y="275">⚡ n8n · Automation</text>
+    <text class="tech-text" x="2040" y="275">🖥️ React · Next.js</text>
+  </g>
+  
+  <!-- Stats -->
+  <!-- Stat 1 -->
+  <rect class="stat-bg" x="50" y="330" width="260" height="80"/>
+  <text class="stat-number" x="180" y="370" text-anchor="middle">7<tspan class="accent">+</tspan></text>
+  <text class="stat-label" x="180" y="395" text-anchor="middle">Years Backend Experience</text>
+  
+  <!-- Stat 2 -->
+  <rect class="stat-bg" x="330" y="330" width="260" height="80"/>
+  <text class="stat-number" x="460" y="370" text-anchor="middle">10<tspan class="accent">d</tspan></text>
+  <text class="stat-label" x="460" y="395" text-anchor="middle">MVP to Production</text>
+  
+  <!-- Stat 3 -->
+  <rect class="stat-bg" x="610" y="330" width="260" height="80"/>
+  <text class="stat-number" x="740" y="370" text-anchor="middle">3<tspan class="accent">+</tspan></text>
+  <text class="stat-label" x="740" y="395" text-anchor="middle">Startups Scaled</text>
+  
+  <!-- Stat 4 -->
+  <rect class="stat-bg" x="890" y="330" width="260" height="80"/>
+  <text class="stat-number" x="1020" y="370" text-anchor="middle">100<tspan class="accent">%</tspan></text>
+  <text class="stat-label" x="1020" y="395" text-anchor="middle">Remote Friendly</text>
+  
+  <!-- CTA Buttons -->
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/in/mohammad-barzgar-899476307" target="_blank">
+    <rect class="btn-primary-bg" x="50" y="450" width="200" height="50"/>
+    <text class="btn-text" x="150" y="480" text-anchor="middle">🔗 LinkedIn</text>
+  </a>
+  
+  <!-- Email -->
+  <a href="mailto:mohjammad200@gmail.com">
+    <rect class="btn-outline-bg" x="270" y="450" width="200" height="50"/>
+    <text class="btn-text-outline" x="370" y="480" text-anchor="middle">📧 Email</text>
+  </a>
+  
+  <!-- CV -->
+  <a href="#">
+    <rect class="btn-outline-blue" x="490" y="450" width="200" height="50"/>
+    <text class="btn-text-outline" x="590" y="480" text-anchor="middle">📄 View CV</text>
+  </a>
 </svg>
-    <!-- /banner -->
-
-</body>
-</html>
