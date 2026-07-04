@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.svg" alt="Mohammad Barzgar - Backend Engineer" width="100%">
+</p>
+
 # Hi, I'm Mohammad Barzgar 👋
 
 ### Backend Engineer focused on AI, SaaS and Business Automation
