@@ -96,7 +96,7 @@
   <!-- Stats -->
   <!-- Stat 1 -->
   <rect class="stat-bg" x="50" y="330" width="260" height="80"/>
-  <text class="stat-number" x="180" y="370" text-anchor="middle">7<tspan class="accent">+</tspan></text>
+  <text class="stat-number" x="180" y="370" text-anchor="middle">5<tspan class="accent">+</tspan></text>
   <text class="stat-label" x="180" y="395" text-anchor="middle">Years Backend Experience</text>
   
   <!-- Stat 2 -->
