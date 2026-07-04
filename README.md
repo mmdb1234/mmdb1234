@@ -16,7 +16,7 @@
 <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
-<img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&style=for-the-badge"/>
+<img src="https://komarev.com/ghpvc/?username=mmdb1234&style=for-the-badge"/>
 
 </p>
 
@@ -108,9 +108,9 @@ Delivered the complete production-ready system in **10 days**.
 
 <p align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&hide_border=true&rank_icon=github&theme=transparent"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=mmdb1234&show_icons=true&hide_border=true&rank_icon=github&theme=transparent"/>
 
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=YOUR_USERNAME&hide_border=true&theme=transparent"/>
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=mmdb1234&hide_border=true&theme=transparent"/>
 
 </p>
 
@@ -118,7 +118,7 @@ Delivered the complete production-ready system in **10 days**.
 
 <p align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=github-dark"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=mmdb1234&theme=github-dark"/>
 
 </p>
 
