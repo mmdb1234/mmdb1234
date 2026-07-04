@@ -1,116 +1,186 @@
 <p align="center">
-  <img src="githubBanner.png" alt="Mohammad Barzgar - Backend Engineer" width="100%">
+  <img src="githubBanner.png" width="100%" alt="Mohammad Barzgar"/>
 </p>
 
-# Hi, I'm Mohammad Barzgar 👋
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=28&pause=1200&color=4F8CFF&center=true&vCenter=true&width=900&lines=Backend+Engineer;AI+Automation+Developer;Building+Business+Software;Shipping+Production+MVPs;Available+for+Remote+Work" />
+</p>
 
-### Backend Engineer focused on AI, SaaS and Business Automation
+<p align="center">
 
-I help startups and businesses build scalable backend systems, AI-powered workflows, and production-ready SaaS products.
+<a href="https://linkedin.com/in/mohammad-barzgar-899476307">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"/>
+</a>
 
----
+<a href="mailto:mohjammad200@gmail.com">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
 
-## 🚀 What I Build
+<img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&style=for-the-badge"/>
 
-* 🤖 AI-powered business applications
-* ⚙️ Workflow automation systems
-* 🏗️ Scalable backend architectures
-* 📊 CRM / ERP platforms
-* 🌐 REST APIs & integrations
-* 🚀 MVPs that can reach production quickly
-
----
-
-## 💼 Experience
-
-Over the past few years I've worked on business-critical software including:
-
-### Enterprise ERP Platform
-
-Designed and implemented a microservice-based ERP including:
-
-* Inventory Management
-* Accounting
-* BPM Workflows
-* Reporting
-* Authentication
-* API Gateway
-* Event Bus
-* Notification Service
-* Distributed Caching
-
-One of the most challenging problems was designing reliable inventory synchronization under heavy concurrent requests while preventing overselling and minimizing database locking.
+</p>
 
 ---
 
-### AI CRM Assistant
+# 👋 Hi, I'm Mohammad Barzgar
 
-An AI-powered assistant for CRM platforms that helps sales teams automate repetitive tasks and improve customer interactions.
+Backend Engineer specializing in **AI Automation**, **Backend Architecture** and **Business Software**.
 
----
-
-### Workflow Automation Platform
-
-Built a production-ready automation platform using **n8n**, AI integrations and custom backend services.
-
-Delivered the complete system—including backend, dashboards and landing page—in only **10 days**.
+I help startups build scalable backend systems, AI-powered workflows and production-ready SaaS applications that solve real business problems.
 
 ---
 
-## 🛠 Tech Stack
+## 🚀 What I Can Help You Build
 
-### Backend
-
-* ASP.NET Core
-* C#
-* Python
-* FastAPI
-* Django
-
-### Frontend
-
-* React
-* Next.js
-* JavaScript
-
-### Databases
-
-* PostgreSQL
-* SQL Server
-* MongoDB
-* Redis
-
-### DevOps
-
-* Docker
-* Linux
-* Nginx
-
-### AI & Automation
-
-* OpenAI APIs
-* AI Agents
-* n8n
-* AI Workflows
-* LLM Integrations
+- 🤖 AI-powered business applications
+- ⚙️ Workflow automation platforms
+- 🏗 Enterprise backend architecture
+- 📊 CRM & ERP systems
+- 🌐 REST APIs & Integrations
+- 🚀 Production-ready SaaS MVPs
 
 ---
 
-## 🎯 What I'm Looking For
+# 💡 Why Work With Me?
 
-I'm interested in working with startups and companies building:
+✅ Built enterprise ERP systems
 
-* SaaS products
-* AI applications
-* Automation platforms
-* Business software
-* Backend-heavy systems
+✅ Delivered production-ready MVPs in as little as **10 days**
 
-Remote opportunities are especially welcome.
+✅ Experience with AI-powered business software
+
+✅ Strong focus on scalable backend architecture
+
+✅ Business logic first, code second
 
 ---
 
-## 📫 Let's Connect
+# 📈 Career Highlights
 
-* LinkedIn: https://linkedin.com/in/mohammad-barzgar-899476307
-* Email: [mohjammad200@gmail.com](mailto:mohjammad200@gmail.com)
+### 🏢 Enterprise ERP Platform
+
+Designed and implemented a **microservice architecture** including:
+
+- Inventory Management
+- Accounting
+- BPM
+- API Gateway
+- Authentication
+- Event Bus
+- Reporting
+- Notifications
+- Distributed Caching
+
+One of the biggest engineering challenges was implementing an inventory synchronization mechanism capable of handling concurrent warehouse operations while preventing overselling without relying on heavy database locking.
+
+---
+
+### 🤖 AI CRM Assistant
+
+Built an AI-powered CRM assistant helping sales teams automate repetitive workflows and improve customer interactions.
+
+---
+
+### ⚡ Workflow Automation Platform
+
+Built an automation platform using:
+
+- n8n
+- AI integrations
+- Custom Backend APIs
+- React Dashboard
+
+Delivered the complete production-ready system in **10 days**.
+
+---
+
+# 🛠 Tech Stack
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=dotnet,cs,python,fastapi,django,react,nextjs,postgres,mongodb,redis,docker,linux,git"/>
+
+</p>
+
+---
+
+# 📊 GitHub Stats
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&hide_border=true&rank_icon=github&theme=transparent"/>
+
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=YOUR_USERNAME&hide_border=true&theme=transparent"/>
+
+</p>
+
+---
+
+<p align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=github-dark"/>
+
+</p>
+
+---
+
+# 👨‍💻 About Me
+
+```ts
+const mohammad = {
+
+    role: "Backend Engineer",
+
+    specialization: [
+        "Backend Architecture",
+        "AI Automation",
+        "Business Software",
+        "SaaS"
+    ],
+
+    strongestSkills: [
+        "ASP.NET Core",
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "React"
+    ],
+
+    currentFocus: [
+        "AI Agents",
+        "Automation",
+        "Backend Systems",
+        "SaaS"
+    ],
+
+    availableFor: "Remote Work",
+
+    openToRelocate: true
+}
+```
+
+---
+
+# 🎯 Currently Looking For
+
+- Remote Backend Engineer
+- AI Automation Engineer
+- SaaS Backend Developer
+- Startup Teams
+- Product Companies
+
+---
+
+# 📫 Let's Connect
+
+<p align="center">
+
+<a href="mailto:mohjammad200@gmail.com">
+<img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<a href="https://linkedin.com/in/mohammad-barzgar-899476307">
+<img src="https://img.shields.io/badge/LinkedIn-Mohammad_Barzgar-0077B5?style=for-the-badge&logo=linkedin"/>
+</a>
+
+</p>
